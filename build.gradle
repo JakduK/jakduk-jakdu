@@ -17,6 +17,10 @@ apply plugin: 'org.springframework.boot'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
+springBoot {
+	executable = true
+}
+
 repositories {
 	mavenCentral()
 }
@@ -25,6 +29,11 @@ repositories {
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-data-mongodb')
 	compile('org.springframework.boot:spring-boot-starter-web')
+
+	compile 'org.apache.commons:commons-lang3:3.6'
+	compile 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.8.10'
+
 	compileOnly('org.projectlombok:lombok')
+
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
