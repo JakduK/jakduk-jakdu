@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		springBootVersion = '1.5.6.RELEASE'
+		springBootVersion = '1.5.7.RELEASE'
 	}
 	repositories {
 		mavenCentral()
@@ -32,7 +32,6 @@ dependencies {
 
 	compile 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.8.10'
 	compile 'org.apache.commons:commons-lang3:3.6'
-	compile 'org.apache.httpcomponents:httpclient:4.5.3'
 	compile 'org.jsoup:jsoup:1.10.3'
 
 	compileOnly('org.projectlombok:lombok')

@@ -27,7 +27,7 @@ import java.util.stream.Stream;
  */
 
 @Configuration
-@EnableMongoRepositories
+@EnableMongoRepositories("com.jakduk.jakdu.repository")
 public class MongodbConfig extends AbstractMongoConfiguration {
 
     @Resource private JakdukProperties.Mongodb mongodbProperties;
