@@ -1,8 +1,6 @@
 package com.jakduk.jakdu.model.embedded;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 /**
  * @author pyohwan
@@ -10,20 +8,22 @@ import lombok.Setter;
  */
 
 @NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter
+@Builder
 public class JakduScheduleScore {
 
-    private Integer homeFullTime;
+    private Integer homeFullTime; // 정규시간 종료 홈 스코어
 
-    private Integer awayFullTime;
+    private Integer awayFullTime; // 정규시간 종료 어웨이 스코어
 
-    private Integer homeOverTime;
+    private Integer homeOverTime; // 연장전 종료 홈 스코어
 
-    private Integer awayOverTime;
+    private Integer awayOverTime; // 연장전 종료 어웨이 스코어
 
-    private Integer homePenaltyShootout;
+    private Integer homePenaltyShootout; // 승부차기 종료 홈 스코어
 
-    private Integer awayPenaltyShootout;
+    private Integer awayPenaltyShootout; // 승부차기 종료 어웨이 스코어
 
 }

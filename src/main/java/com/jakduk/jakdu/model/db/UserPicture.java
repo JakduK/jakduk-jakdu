@@ -12,6 +12,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
 @Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
@@ -21,10 +22,9 @@ public class UserPicture {
     private String id;
 
     @DBRef
-    @Setter
     private User user;
 
-    @Setter private String status;
+    private String status;
 
     private String contentType;
 

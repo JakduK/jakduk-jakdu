@@ -6,8 +6,6 @@ import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.validation.constraints.NotNull;
-
 @NoArgsConstructor
 @Getter
 @Setter
@@ -26,7 +24,6 @@ public class Sequence {
 	 * 게시판 ID
 	 * JakdukConst 의 게시판 ID 참고
 	 */
-	@NotNull
 	private String name;
 
 }
